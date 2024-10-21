@@ -8,6 +8,7 @@ int main(int argc, char const *argv[])
 	if (argc == 2)
 	{
 		i = 0;
+		flag = 0; // To avoid printing a space before the first word
 		while (argv[1][i] == ' ' || argv[1][i] == '\t')
 			i += 1;
 		while (argv[1][i])
